@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG no Brasil - Carousel</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclua os arquivos CSS do Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html"><img src="images/rpg-logo.png" alt="logo RPG"></a>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="pag3.html">Acordion</a></li>
+            <li><a href="pag2.html">Carrosel</a></li>
+        </ul>
+    </nav>
+    <a class="github" href="https://github.com/MarcheloTchelo"><button>GitHub</button></a>
+</header> 
+
+
+    <!-- CAROUSEL CRITERIO = F -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicadores -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Envelopamento dos slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="Resources/atrahad.jpg" alt="dnd" width="600" height="400" align="center">
+            </div>
+
+            <div class="item">
+                <img src="Resources/cthulu.jpg" alt="Cthulu" width="600" height="400">
+            </div>
+
+            <div class="item">
+                <img src="Resources/ordempara.jpg" alt="op" width="600" height="400" >
+            </div>
+        </div>
+
+        <!-- Controles esquerda e direita -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Inclua os arquivos JS do Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
